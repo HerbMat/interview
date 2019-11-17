@@ -1,0 +1,20 @@
+plugins {
+    id 'java'
+}
+
+group 'ewejsciowki'
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = JavaVersion.VERSION_1_10
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile('org.hibernate:hibernate-core:5.4.0.Final')
+    testCompile('org.junit.jupiter:junit-jupiter-engine:5.1.0')
+    testCompile('org.mockito:mockito-core:2.+')
+    testCompile('org.mockito:mockito-junit-jupiter:2.18.3')
+    testCompile('org.hamcrest:hamcrest-all:1.3')
+}
